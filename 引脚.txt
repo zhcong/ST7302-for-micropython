@@ -1,8 +1,0 @@
-vcc -> 3.3v
-gnd -> gnd
-d/c -> gp0
-rest -> gp1
-busy -> gp2
-sdi -> gp7
-sclk -> gp6
-c/s -> gp9
