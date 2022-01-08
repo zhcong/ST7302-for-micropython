@@ -90,7 +90,7 @@ class ST7032(framebuf.FrameBuffer):
                 two_column_param.append(bit1)
                 bit2 = self.__mix_bit(bit>>4, column_list[column_i+1][bit_i]>>4)
                 two_column_param.append(bit2)
-            self.__shift_buffer(column_i//2, two_column_param + [0x00, 0x00])
+            self.__shift_buffer(column_i//2, two_column_param + self.bit_column_fill)
         if not len(change_column_index_list) == 0:
             self.old_buffer[:] = self.buffer
         gc.collect()
