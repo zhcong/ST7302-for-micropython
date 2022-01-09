@@ -39,6 +39,7 @@ class ST7032(framebuf.FrameBuffer):
     
     def clear(self):
         self.fill(0)
+        self.old_buffer[:] = self.buffer
         self.send_command(0xb9)  #enable CLR RAM
         self.send_param(0xe3)
         self.__sleep_waith_command(1000)
