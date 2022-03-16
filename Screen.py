@@ -1,6 +1,6 @@
 import time, math, framebuf, utime, gc
 
-class ST7032(framebuf.FrameBuffer):
+class ST7302(framebuf.FrameBuffer):
     # TODO 电压不稳
     # TODO 简化代码逻辑
 
