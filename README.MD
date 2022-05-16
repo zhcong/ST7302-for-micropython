@@ -1,4 +1,5 @@
 # ST7302-for-micropython
+- arduino version see [https://github.com/zhcong/ST7302-for-arduino](https://github.com/zhcong/ST7302-for-arduino)
 work for ST7302 lcd screen, and MCU is Raspberry Pi pico. ST7302 has a complex show conversion map and memory set command, see more in [this link](doc/ST7302_V0.0.pdf). And this driver have a partially update ability.
 
 ![direction](doc/screen.jpg)
